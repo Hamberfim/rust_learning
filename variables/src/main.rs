@@ -68,15 +68,15 @@ fn main() {
     let six_point_four = my_tuples.1;
     println!("{five_hundred}, {six_point_four}");
 
+    // string in a tuple
+    let message = "The temperature today is:";
+    let x: (&str, u8) = (message, 100);
+    println!("{} {}", x.0, x.1);
+
     // arrays
     let my_arr1 = [17, 28, 3, 44];
     println!("Array: {:?}", my_arr1);
     println!("Array value at index 1: {:?}", my_arr1[1]);
     let my_rgb_color: [u8; 3] = [128, 3, 90]; // purple
     println!("RGB Value: {:?}", my_rgb_color);
-
-    // tmp
-    let message = "The temperature today is:";
-    let x: (&str, u8) = (message, 100);
-    println!("{} {}", x.0, x.1);
 }
