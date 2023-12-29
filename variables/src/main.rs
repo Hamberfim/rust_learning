@@ -48,4 +48,35 @@ fn main() {
     // remainder
     let remainder = 43 % 5;
     println!("{}", remainder);
+
+    let t: bool = true;
+    println!("{}", t);
+
+    // tuple
+    let tup1: (char, i32, f32, i64) = ('a', 16, 199.0987, 10000);
+    println!("{:?}", tup1); // {:?} special format
+    let tup2: (char, u8, u8, i128) = ('s', 255, b'A', 1_000_000_000);
+    println!("{:?}", tup2); // {:?} special format
+
+    // destructuring
+    let tup3 = (500, 6.4, 1);
+    let (x, y, z) = tup3;
+    println!("The value of x, y and z is: {x}, {y} and {z}");
+    // access tuples via index value
+    let my_tuples: (i32, f64, u8) = (500, 6.4, 1);
+    let five_hundred = my_tuples.0;
+    let six_point_four = my_tuples.1;
+    println!("{five_hundred}, {six_point_four}");
+
+    // arrays
+    let my_arr1 = [17, 28, 3, 44];
+    println!("Array: {:?}", my_arr1);
+    println!("Array value at index 1: {:?}", my_arr1[1]);
+    let my_rgb_color: [u8; 3] = [128, 3, 90]; // purple
+    println!("RGB Value: {:?}", my_rgb_color);
+
+    // tmp
+    let message = "The temperature today is:";
+    let x: (&str, u8) = (message, 100);
+    println!("{} {}", x.0, x.1);
 }
