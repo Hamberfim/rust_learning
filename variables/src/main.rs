@@ -8,9 +8,9 @@ fn main() {
     // shadowing
     {
         // scope block
-        let y = 10;
+        let y = 10; // integer
         println!("Outer Scope: The value of y is {y}");
-        let y = y + 5; // shadow
+        let y = y + 5; // shadow : integer
         println!("First Shadow: The value of y is {y}");
         {
             // scope block change
@@ -25,4 +25,27 @@ fn main() {
     println!("{}", spaces); // blank five spaces
     let spaces = spaces.len(); // numeric type
     println!("{}", spaces); // the length
+
+    // mathematical operators
+    // addition
+    let sum = 5 + 10;
+    println!("{}", sum);
+
+    // subtraction
+    let difference = 95.5 - 4.3;
+    println!("{}", difference);
+
+    // multiplication
+    let product = 4 * 30;
+    println!("{}", product);
+
+    // division
+    let quotient = 56.7 / 32.2;
+    println!("{}", quotient);
+    let truncated = -5 / 3; // Results in -1
+    println!("{}", truncated);
+
+    // remainder
+    let remainder = 43 % 5;
+    println!("{}", remainder);
 }
