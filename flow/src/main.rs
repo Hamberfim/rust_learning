@@ -60,4 +60,20 @@ fn main() {
         count += 1;
     }
     println!("End count = {count}");
+
+    // while loop
+    let mut count_num = 3;
+    while count_num != 0 {
+        println!("{count_num}");
+        count_num -= 1;
+    }
+
+    println!("LIFTOFF!!!");
+
+    let my_arr = [10, 20, 30, 40];
+    let mut i = 0;
+    while i < my_arr.len() {
+        println!("The value at index {} is {}", i, my_arr[i]);
+        i += 1;
+    }
 }
