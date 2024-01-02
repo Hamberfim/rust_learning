@@ -76,4 +76,9 @@ fn main() {
         println!("The value at index {} is {}", i, my_arr[i]);
         i += 1;
     }
+
+    // for in loop
+    for element in my_arr {
+        println!("The value is {element}");
+    }
 }
