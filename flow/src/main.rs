@@ -81,4 +81,9 @@ fn main() {
     for element in my_arr {
         println!("The value is {element}");
     }
+
+    for some_num in (1..4).rev() {
+        println!("{some_num}!");
+    }
+    println!("LIFTOFF!!!");
 }
