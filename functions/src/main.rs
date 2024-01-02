@@ -5,7 +5,6 @@ fn main() {
     print_labeled_measurements(3, 'h');
 
     let x = plus_one(5);
-
     println!("The value of x is: {x}");
 }
 
