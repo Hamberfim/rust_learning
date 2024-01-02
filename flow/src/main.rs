@@ -1,5 +1,4 @@
 // control flow
-
 fn main() {
     let number: i32 = 7;
     if number < 5 {
@@ -26,4 +25,18 @@ fn main() {
     let condition: bool = false;
     let new_number: i32 = if condition { 4 } else { number };
     println!("The value of the number is {new_number}");
+
+    // loops
+    let mut counter: i32 = 0;
+    let result = loop {
+        counter += 1;
+
+        println!("The counter: {counter}");
+
+        if counter == 10 {
+            break counter * 2;
+        }
+    };
+
+    println!("The result is {result}");
 }
